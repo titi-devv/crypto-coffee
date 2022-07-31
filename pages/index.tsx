@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to crypto coffee!
+          Welcome to crypto coffee! 2.0
         </h1>
 
         <p className={styles.description}>
