@@ -15,20 +15,26 @@ const Home: NextPage = () => {
             </Head>
 
             <main className={styles.main}>
-                <p className={styles.nav}>navbar</p>
-                <h1 className={styles.title}>
-                    Welcome to crypto coffee! 3.0
-                </h1>
-                <p className={styles.description}>Accept crypto-coffee donations<br></br>👉 quickly improve your articles, blogs, tutorials, socials, ...</p>
-                <div className={styles.buttons}>
+                <div className={styles.section1}>
 
-                    <StartInput />
-                    <StartButton />
-                </div>
-                <div className={styles.buttons__desc}>It’s <span className={styles.bold}>free</span> & <span className={styles.bold}>easy</span> . Takes less than 1 minute.</div>
-                <div className={styles.trust__logos}>
-                    <p className={styles.small__text}>available on</p>
-                    <Image src="/logos/medium__logo.png" alt="Logo" width={200} height={50} style={{ opacity: 0.5 }} />
+                    <p className={styles.nav}>navbar</p>
+                    <h1 className={styles.title}>
+                        1 supporter <br></br>is worth 1000 readers
+                    </h1>
+                    <p className={styles.description}>Accept crypto-coffee donations<br></br>👉 quickly improve your articles, blogs, tutorials, socials, ...</p>
+                    <div className={styles.gap}></div>
+                    <div className={styles.buttons}>
+
+                        <StartInput />
+                        <StartButton />
+                    </div>
+                    <div className={styles.buttons__desc}>It’s <span className={styles.bold}>free</span> & <span className={styles.bold}>easy</span> . Takes less than 1 minute.</div>
+                    <div className={styles.gap}></div>
+                    <div className={styles.gap}></div>
+                    <div className={styles.trust__logos}>
+                        <p className={styles.small__text}>available on</p>
+                        <Image src="/logos/medium__logo.png" alt="Logo" width={200} height={50} style={{ opacity: 0.5 }} />
+                    </div>
                 </div>
 
             </main>
