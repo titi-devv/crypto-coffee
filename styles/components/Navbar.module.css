@@ -1,0 +1,13 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2em;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}

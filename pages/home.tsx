@@ -2,8 +2,9 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import StartInput from '../components/starter/startInput'
-import StartButton from '../components/starter/startButton'
+import StartInput from '../components/buttons/startInput'
+import StartButton from '../components/buttons/startButton'
+import Navbar from '../components/Navbar/navbar'
 const Home: NextPage = () => {
     return (
         <div className={styles.container}>
@@ -14,10 +15,10 @@ const Home: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
+            <Navbar />
             <main className={styles.main}>
                 <div className={styles.section1}>
 
-                    <p className={styles.nav}>navbar</p>
                     <h1 className={styles.title}>
                         1 supporter <br></br>is worth 1000 readers
                     </h1>
@@ -29,8 +30,7 @@ const Home: NextPage = () => {
                         <StartButton />
                     </div>
                     <div className={styles.buttons__desc}>It’s <span className={styles.bold}>free</span> & <span className={styles.bold}>easy</span> . Takes less than 1 minute.</div>
-                    <div className={styles.gap}></div>
-                    <div className={styles.gap}></div>
+
                     <div className={styles.trust__logos}>
                         <p className={styles.small__text}>available on</p>
                         <Image src="/logos/medium__logo.png" alt="Logo" width={200} height={50} style={{ opacity: 0.5 }} />
