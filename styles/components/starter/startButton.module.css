@@ -1,0 +1,16 @@
+.container {
+    background: #6EF283;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1em 0;
+}
+
+.text {
+
+    font-weight: 600;
+    font-size: 18px;
+    color: #0C0E27;
+}
