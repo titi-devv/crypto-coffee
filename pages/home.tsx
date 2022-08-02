@@ -53,12 +53,20 @@ const Home: NextPage = () => {
                     <div className={styles.gap}></div>
                     <div className={styles.images}>
                         <div className={styles.bell}>
-                            <Image src="/images/emojis/bell.svg" alt="notification" width={70} height={78} draggable={"false"} />
+                            <Image src="/images/emojis/bell.svg" alt="notification" layout='fill' draggable={"false"} />
                         </div>
 
                         <Image src="/images/send_cryptocoffee.svg" alt="send crypto coffee" width={314} height={361.56} draggable={"false"} />
-                        <Image src="/images/received_cryptocoffee.svg" alt="received crypto coffee" width={314} height={91.63} draggable={"false"} />
-                        <Image src="/images/received_cryptocoffee_desc.svg" alt="received crypto coffee with description" width={314} height={198.32} draggable={"false"} />
+                        <div className={styles.right}>
+                            <span className={styles.image}>
+
+                                <Image src="/images/received_cryptocoffee.svg" alt="received crypto coffee" width={314} height={91.63} draggable={"false"} />
+                            </span>
+                            <span className={styles.image}>
+
+                                <Image src="/images/received_cryptocoffee_desc.svg" alt="received crypto coffee with description" width={314} height={198.32} draggable={"false"} />
+                            </span>
+                        </div>
                     </div>
                     <p className={styles.description}>No account required everything is made from their crypto wallet, in a decentralized way.</p>
 

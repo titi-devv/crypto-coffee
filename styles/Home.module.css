@@ -3,6 +3,13 @@
 
 }
 
+@media screen and (min-width:1024px) {
+  .container {
+    padding: 0 4rem;
+
+  }
+}
+
 .main {
   min-height: 100vh;
   padding: 3rem 0;
@@ -105,6 +112,14 @@
   bottom: 160px;
   z-index: 2;
   transform: translate(150px);
+  width: 70px;
+  height: 78px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media screen and (max-width:370px) {
@@ -137,16 +152,35 @@
   .description {
     max-width: 500px;
   }
+
+
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 @media screen and (min-width:1024px) {
   .description {
     max-width: 600px;
   }
-}
 
-.bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  .images {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .image {
+    transform: rotate(-6.7deg) translate(20px);
+
+  }
+
+  .bell {
+    top: -100px;
+    transform: translate(354px);
+    width: 130px;
+    height: 100%;
+  }
 }
