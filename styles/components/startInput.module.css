@@ -6,6 +6,27 @@
     align-items: center;
     width: 100%;
     padding: 1em 0;
+
 }
 
-.domains {}
+
+
+.domains {
+    text-align: end;
+    width: 100%;
+}
+
+.placeholder {
+    border: 0;
+    background: transparent;
+    color: #CCCCCC;
+    font-size: 16px;
+    text-align: start;
+    width: 80%;
+
+}
+
+.placeholder:focus {
+    border: 0;
+    outline: none;
+}

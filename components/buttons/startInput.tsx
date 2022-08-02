@@ -7,7 +7,11 @@ import styles from '../../styles/components/startInput.module.css'
 const StartInput: NextPage = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.domains}>crypto-coffee.me/</div>
+
+      <span className={styles.domains}>crypto-coffee.me/</span>
+      <input type="text" placeholder='enteryourname' className={styles.placeholder} />
+
+
     </div>
   )
 }
