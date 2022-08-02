@@ -98,8 +98,18 @@ const Home: NextPage = () => {
                     </div>
 
                 </div>
+                <div className={styles.section4}>
+                    <h1 className={styles.title}>
+                        Designed for writers
+                    </h1>
 
-            </main>
+                    <p className={styles.description} style={{ marginBottom: 30 }}>93,4% of active crypto writers earn less than a hundred dollars per month.<br></br><br></br> 96% of crypto articles readers are investors and truly belivers.<br></br><br></br>They will have more facility to become your supporters thanks to a crypto-coffee donation. </p>
+
+
+                    <Image src="/images/btc_wallet.svg" alt="Logo" width={303.71} height={303.71} />
+                </div>
+
+            </main >
 
             <footer className={styles.footer}>
                 <a
@@ -113,7 +123,7 @@ const Home: NextPage = () => {
                     </span>
                 </a>
             </footer>
-        </div>
+        </div >
     )
 }
 
