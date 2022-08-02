@@ -15,17 +15,14 @@
 }
 
 .section1,
-.section2 {
+.section2,
+
+.section4 {
   width: 100%;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+.section1 {
+  min-height: calc(100vh - 9em);
 }
 
 .main__title {
@@ -70,7 +67,12 @@
   font-weight: 700;
 }
 
-.trust__logos {}
+.trust__logos {
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translate(-50%);
+}
 
 .small__text {
 

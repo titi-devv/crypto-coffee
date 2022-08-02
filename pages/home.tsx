@@ -4,9 +4,11 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import StartInput from '../components/buttons/startInput'
 import StartButton from '../components/buttons/startButton'
-import Navbar from '../components/Navbar/navbar'
+import Navbar from '../components/navbar/navbar'
 import Links from '../components/steps/links'
 import Steps from '../components/steps/steps'
+import StartNow from '../components/buttons/startNow'
+import Footer from '../components/footer/footer'
 const Home: NextPage = () => {
     return (
         <div className={styles.container}>
@@ -103,26 +105,21 @@ const Home: NextPage = () => {
                         Designed for writers
                     </h1>
 
-                    <p className={styles.description} style={{ marginBottom: 30 }}>93,4% of active crypto writers earn less than a hundred dollars per month.<br></br><br></br> 96% of crypto articles readers are investors and truly belivers.<br></br><br></br>They will have more facility to become your supporters thanks to a crypto-coffee donation. </p>
-
-
+                    <p className={styles.description} style={{ marginBottom: 30 }}>93,4% of active crypto writers earn <span className={styles.bold}>less</span> than a hundred dollars per month.<br></br><br></br> 96% of crypto articles readers are investors and truly belivers.</p>
                     <Image src="/images/btc_wallet.svg" alt="Logo" width={303.71} height={303.71} />
+                    <p className={styles.description} >They will have more facility to become your supporters by buying you a crypto-coffee.</p>
+
+
+
+                    <div className={styles.gap}></div>
+                    <StartNow />
+                    <div className={styles.gap}></div>
                 </div>
+                <Footer />
 
             </main >
 
-            <footer className={styles.footer}>
-                <a
-                    href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    My footer
-                    <span className={styles.logo}>
-                        <Image src="/logos/logo.png" alt="Logo" width={50} height={45} />
-                    </span>
-                </a>
-            </footer>
+
         </div >
     )
 }
