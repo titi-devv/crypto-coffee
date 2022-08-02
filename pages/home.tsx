@@ -46,16 +46,22 @@ const Home: NextPage = () => {
                         Give your readers a <br></br>chance to thank you easily
                     </h1>
 
-                    <p className={styles.description}>Crypto Coffee Me gives the ability to your readers to say thanks. In a few clics, they can send you a donation (a crypto coffee) and leave an on-chain message.<br></br><br></br> No account required everything is made from their crypto wallet, in a decentralized way.</p>
+                    <p className={styles.description}>Crypto Coffee Me gives the ability to your readers to say thanks. In a few clics, they can send you a donation (a crypto coffee) and leave an on-chain message.</p>
+
 
 
                     <div className={styles.gap}></div>
                     <div className={styles.images}>
+                        <div className={styles.bell}>
+                            <Image src="/images/emojis/bell.svg" alt="notification" width={70} height={78} draggable={"false"} />
+                        </div>
 
-                        <Image src="/images/send_cryptocoffee.png" alt="Logo" width={314} height={361.56} />
-                        <Image src="/images/received_cryptocoffee.png" alt="Logo" width={314} height={91.63} />
-                        <Image src="/images/received_cryptocoffee_desc.png" alt="Logo" width={314} height={198.32} />
+                        <Image src="/images/send_cryptocoffee.svg" alt="send crypto coffee" width={314} height={361.56} draggable={"false"} />
+                        <Image src="/images/received_cryptocoffee.svg" alt="received crypto coffee" width={314} height={91.63} draggable={"false"} />
+                        <Image src="/images/received_cryptocoffee_desc.svg" alt="received crypto coffee with description" width={314} height={198.32} draggable={"false"} />
                     </div>
+                    <p className={styles.description}>No account required everything is made from their crypto wallet, in a decentralized way.</p>
+
                 </div>
                 <div className={styles.section3}>
                     <h1 className={styles.title}>
@@ -113,7 +119,7 @@ const Home: NextPage = () => {
 
                     <div className={styles.gap}></div>
                     <StartNow />
-                    <div className={styles.gap}></div>
+
                 </div>
                 <Footer />
 

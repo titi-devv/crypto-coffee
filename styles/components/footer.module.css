@@ -24,3 +24,12 @@
     align-items: center;
     gap: 10px;
 }
+
+@media screen and (min-width:767px) {
+
+    .container,
+    .copyrights {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
