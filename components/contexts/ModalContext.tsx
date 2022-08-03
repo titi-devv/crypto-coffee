@@ -43,7 +43,7 @@ const ModalProvider = ({ children }: { children: JSX.Element }) => {
 
     const closeModal = () => {
         setModal(false)
-        console.log('closed')
+        console.log(modalOpened, 'closed')
     }
 
 

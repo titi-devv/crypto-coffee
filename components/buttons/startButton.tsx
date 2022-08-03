@@ -15,7 +15,7 @@ const StartInput: NextPage = () => {
     const { modalOpened, openModal } = useContext(ModalContext)
     return (
         <button className={styles.container} onClick={openModal}>
-            <Modal />
+
 
             <div className={styles.text}>Create my page</div>
         </button>

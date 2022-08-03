@@ -9,6 +9,7 @@ import Links from '../components/steps/links'
 import Steps from '../components/steps/steps'
 import StartNow from '../components/buttons/startNow'
 import Footer from '../components/footer/footer'
+import Modal from '../components/modal/modal'
 
 
 const Home: NextPage = () => {
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
             </Head>
 
             <Navbar />
+            <Modal />
             <main className={styles.main}>
                 <div className={styles.section1}>
 
