@@ -36,12 +36,13 @@ const Home: NextPage = () => {
                     <div className={styles.buttons__desc}>It’s <span className={styles.bold}>free</span> & <span className={styles.bold}>easy</span> . Takes less than 1 minute.</div>
                     <div className={styles.gap}></div>
                     <div className={styles.trust__logos}>
-                        <p className={styles.small__text}>available on</p>
+                        <p className={styles.small__text}>Only on</p>
                         <Image src="/logos/medium__logo.png" alt="Logo" width={200} height={50} style={{ opacity: 0.5 }} />
                     </div>
                     <div className={styles.hero__hand}>
 
                         <Image src="/images/hero__hand.svg" alt="main image" layout='fill' />
+
                     </div>
                 </div>
 

@@ -9,6 +9,7 @@ p {
   padding: 0;
   margin: 0;
   font-family: Poppins, sans-serif;
+
 }
 
 a {
@@ -29,5 +30,7 @@ a {
     color: white;
     background: #0C0E27;
     text-align: center;
+    overflow-x: hidden;
+
   }
 }
