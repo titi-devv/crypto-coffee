@@ -8,7 +8,7 @@ const Footer: NextPage = () => {
     return (
         <div className={styles.container}>
             <div className={styles.copyrights}>
-                <Image src="/logos/logo.png" alt="Logo" width={40} height={35} />
+                <Image src="/images/logos/logo.png" alt="Logo" width={40} height={35} />
                 <span className={styles.bold}>
                     © crypto-coffee.me
                 </span>

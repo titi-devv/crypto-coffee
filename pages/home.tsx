@@ -9,6 +9,8 @@ import Links from '../components/steps/links'
 import Steps from '../components/steps/steps'
 import StartNow from '../components/buttons/startNow'
 import Footer from '../components/footer/footer'
+
+
 const Home: NextPage = () => {
     return (
         <div className={styles.container}>
@@ -17,6 +19,7 @@ const Home: NextPage = () => {
 
                 <meta name="description" content="Fund your articles" />
                 <link rel="icon" href="/favicon.ico" />
+                <script async src="https://cdn.splitbee.io/sb.js"></script>
             </Head>
 
             <Navbar />
@@ -37,11 +40,11 @@ const Home: NextPage = () => {
                     <div className={styles.gap}></div>
                     <div className={styles.trust__logos}>
                         <p className={styles.small__text}>Only on</p>
-                        <Image src="/logos/medium__logo.png" alt="Logo" width={200} height={50} style={{ opacity: 0.5 }} />
+                        <Image src="/images/logos/medium__logo.png" alt="Logo" width={200} height={50} style={{ opacity: 0.5 }} />
                     </div>
                     <div className={styles.hero__hand}>
 
-                        <Image src="/images/hero__hand.svg" alt="main image" layout='fill' />
+                        <Image src="/images/hero__hand.svg" alt="main image" layout='fill' draggable="false" />
 
                     </div>
                 </div>
@@ -82,21 +85,15 @@ const Home: NextPage = () => {
                         Easy 3 steps process
                     </h1>
                     <div className={styles.gap}></div>
-                    {/* <div className={styles.top}>
-                        <div className={styles.number1}>01</div>
-                        <div className={styles.link}></div>
-                        <div className={styles.number2}>02</div>
-                        <div className={styles.link}></div>
-                        <div className={styles.number3}>03</div>
-                    </div> */}
+
 
                     <div className={styles.bottom}>
                         <Steps
                             image={'gear'}
                             title={'Set your page up.'}
                             desc1={'Name, Description, Socials, '}
-                            desc2={'Profile & Background picture'}
-
+                            desc2={'Profile & Background p.icture'}
+                            desc3={'‎ '}
                             step={'01'}
                         />
                         <Links />
@@ -105,7 +102,7 @@ const Home: NextPage = () => {
                             title={'Choose your cryptos.'}
                             desc1={'Ethereum, Bitcoin, Avalanche, '}
                             desc2={'Near, Fuze, Aurora'}
-
+                            desc3={'‎ '}
                             step={'02'}
                         />
                         <Links />

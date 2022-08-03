@@ -5,7 +5,9 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 1em 0;
+    padding: 1.45em 0;
+    border: none;
+    cursor: pointer;
 }
 
 .text {

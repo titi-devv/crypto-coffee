@@ -17,13 +17,6 @@
     position: relative;
 }
 
-@media screen and (min-width:1023px) {
-    .item__box {
-        max-width: 100%;
-    }
-}
-
-
 .item__link {
     display: flex;
     align-items: center;
@@ -35,6 +28,24 @@
 
 .item__link__image {
     transform: rotate(0deg);
+}
+
+@media screen and (min-width:1024px) {
+    .item__box {
+        width: 29%;
+    }
+
+    .item__link {
+        display: flex;
+        align-items: center;
+        width: 70px;
+        justify-content: center;
+    }
+
+    .item__link__image {
+        transform: rotate(270deg);
+    }
+
 }
 
 .item__box__title {
@@ -70,4 +81,14 @@
     height: 1px;
     background-color: #ccc;
     transform: translate(90deg);
+}
+
+@media screen and (min-width:767px) {
+    .item__box__title {
+        font-size: 24px;
+    }
+
+    .item__box__desc {
+        font-size: 16px;
+    }
 }

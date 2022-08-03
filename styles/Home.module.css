@@ -23,7 +23,7 @@
 
 .section1,
 .section2,
-
+.section3,
 .section4 {
   width: 100%;
   display: flex;
@@ -157,6 +157,7 @@
   align-items: center;
 }
 
+
 @media screen and (max-width:370px) {
   .bell {
     transform: translate(135px);
@@ -179,6 +180,8 @@
   .bell {
     transform: translate(160px);
   }
+
+
 }
 
 
@@ -204,7 +207,7 @@
 
   .images {
     flex-direction: row;
-    gap: 40px;
+    gap: 70px;
   }
 
   .image {
@@ -214,9 +217,17 @@
 
   .bell {
     top: -100px;
-    transform: translate(354px);
+    transform: translate(374px);
     width: 130px;
     height: 100%;
+  }
+
+  .bottom {
+    width: 120%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
   }
 }
 
