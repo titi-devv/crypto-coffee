@@ -1,21 +1,21 @@
 import React, { createContext, useState } from 'react'
 
-interface modalPropsInt {
-    name?: string
-}
+// interface modalPropsInt {
+//     name?: string
+//     email?: string
+// }
 
-const baseModalProps = {
-    name: ''
-}
+// const baseModalProps = {
+//     name: '',
+//     email: ''
+// }
 
 interface ModalTypes {
-    openModal: (type: modalPropsInt) => void
+    openModal: () => void
     closeModal: () => void
     modalOpened: boolean
-    modalProps: modalPropsInt
-    openPendingModal: () => void
-    closePendingModal: () => void
-    pendingModalOpened: boolean
+    // modalProps: modalPropsInt
+
 }
 
 const ModalContext = createContext<ModalTypes>({
@@ -26,38 +26,26 @@ const ModalContext = createContext<ModalTypes>({
         //
     },
     modalOpened: false,
-    modalProps: baseModalProps,
-    openPendingModal: (): void => {
-        //
-    },
-    closePendingModal: (): void => {
-        //
-    },
-    pendingModalOpened: false,
+    // modalProps: baseModalProps,
+
 })
 
 const ModalProvider = ({ children }: { children: JSX.Element }) => {
     const [modalOpened, setModal] = useState<boolean>(false)
-    const [pendingModalOpened, setPendingModal] = useState<boolean>(false)
-    const [modalProps, setModalProps] = useState<modalPropsInt>(baseModalProps)
 
-    const openModal = (type: modalPropsInt) => {
-        console.log('yoooo')
-        setModalProps(type)
+    // const [modalProps, setModalProps] = useState<modalPropsInt>(baseModalProps)
+
+    const openModal = () => {
+        console.log(modalOpened, 'ouvert?')
+        // setModalProps(type)
         setModal(true)
     }
 
     const closeModal = () => {
         setModal(false)
+        console.log('closed')
     }
 
-    const openPendingModal = () => {
-        setPendingModal(true)
-    }
-
-    const closePendingModal = () => {
-        setPendingModal(false)
-    }
 
     return (
         <ModalContext.Provider
@@ -65,10 +53,8 @@ const ModalProvider = ({ children }: { children: JSX.Element }) => {
                 openModal,
                 closeModal,
                 modalOpened,
-                modalProps,
-                openPendingModal,
-                closePendingModal,
-                pendingModalOpened,
+                // modalProps,
+
             }}
         >
             {children}

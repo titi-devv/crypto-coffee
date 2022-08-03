@@ -9,11 +9,13 @@ import { useContext } from 'react'
 import { ModalContext } from '../contexts/ModalContext'
 
 const StartInput: NextPage = () => {
-    // const [modalOpen, setModalOpen] = useState(false)
-    const { modalOpened, closeModal, modalProps, openModal } = useContext(ModalContext)
+    const [modalOpen, setModalOpen] = useState(false)
+
+
+    const { modalOpened, openModal } = useContext(ModalContext)
     return (
-        <button className={styles.container} onClick={() => openModal({ name: 'titi' })}>
-            {modalOpened === true && <Modal />}
+        <button className={styles.container} onClick={openModal}>
+            <Modal />
 
             <div className={styles.text}>Create my page</div>
         </button>
