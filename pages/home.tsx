@@ -39,7 +39,12 @@ const Home: NextPage = () => {
                         <p className={styles.small__text}>available on</p>
                         <Image src="/logos/medium__logo.png" alt="Logo" width={200} height={50} style={{ opacity: 0.5 }} />
                     </div>
+                    <div className={styles.hero__hand}>
+
+                        <Image src="/images/hero__hand.svg" alt="main image" layout='fill' />
+                    </div>
                 </div>
+
 
                 <div className={styles.section2}>
                     <h1 className={styles.title}>
