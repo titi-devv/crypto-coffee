@@ -13,8 +13,43 @@
 }
 
 .modal {
-    width: 500px;
-    height: 500px;
-    background-color: bisque;
-    border-radius: 5px;
+    width: 640px;
+    height: 485px;
+    background: #1A1C37;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+}
+
+.comingsoon {
+    margin-top: 2em;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.user {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.description {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: none;
+    background-color: transparent;
+    color: #FFFFFF;
 }
