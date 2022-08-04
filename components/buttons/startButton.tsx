@@ -7,12 +7,16 @@ import styles from '../../styles/components/startButton.module.css'
 import Modal from '../modal/modal'
 import { useContext } from 'react'
 import { ModalContext } from '../contexts/ModalContext'
-
+import toast from 'react-hot-toast'
 const StartInput: NextPage = () => {
     const [modalOpen, setModalOpen] = useState(false)
     const handleModal = () => {
         if (valProps.val.length < 2) {
+            return toast.error("Please enter at least 2 characters")
 
+        }
+        else if (valProps.val.length > 14) {
+            return toast.error("Please enter less than 14 characters")
         }
         else {
             openModal({ name: valProps.val })
