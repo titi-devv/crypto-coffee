@@ -13,9 +13,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       toastOptions={{
         // Define default options
         style: {
-          background: '#1A1C34',
-          color: '#fff',
-          maxWidth: '500px'
+          background: '#ccc',
+          color: '#1A1C34',
+          maxWidth: '550px'
         },
         // Default options for specific types
         success: {
@@ -24,6 +24,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             secondary: 'black',
           },
           icon: '✅',
+          duration: 5000
         },
         error: {
           theme: {

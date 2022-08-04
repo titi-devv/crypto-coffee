@@ -52,14 +52,14 @@ const ModalProvider = ({ children }: { children: JSX.Element }) => {
     const [valProps, setValProps] = useState<inputPropsInt>(inputModalProps)
 
     const openModal = (type: modalPropsInt) => {
-        console.log(modalOpened, 'ouvert?')
+
         setModalProps(type)
         setModal(true)
     }
 
     const closeModal = () => {
         setModal(false)
-        console.log(modalOpened, 'closed')
+        setModalProps({ name: '' })
     }
     //get value from startInput
     const getVal = (val: inputPropsInt) => {

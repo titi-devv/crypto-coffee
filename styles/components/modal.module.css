@@ -1,5 +1,5 @@
 .container {
-    background-color: rgba(0, 0, 0, 0.205);
+    background-color: rgba(0, 0, 0, 0.505);
     width: 100%;
     height: 100vh;
     z-index: 10;
@@ -13,22 +13,23 @@
 }
 
 .modal {
-    width: 640px;
-    height: 485px;
+    width: 610px;
+    height: 445px;
     background: #1A1C37;
-    border: 1px solid #ccc;
+    border: 1px solid #fff;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 25px;
     position: relative;
+    overflow: hidden;
 }
 
 .comingsoon {
     margin-top: 2em;
     font-weight: 700;
     font-size: 16px;
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 0.562);
 }
 
 .user {
@@ -39,6 +40,8 @@
 .description {
     font-weight: 700;
     font-size: 24px;
+
+
 }
 
 .underline {
@@ -52,4 +55,67 @@
     border: none;
     background-color: transparent;
     color: #FFFFFF;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.emailInput {
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding: 0.95em 0;
+
+
+}
+
+.placeholder {
+    border: 0;
+    background: transparent;
+    color: #CCCCCC;
+    font-size: 16px;
+    width: 90%;
+    text-align: center;
+
+}
+
+.placeholder:focus {
+    border: 0;
+    outline: none;
+}
+
+.buttonInput {
+    background: #6EF283;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding: 1.45em 0;
+    border: none;
+    cursor: pointer;
+}
+
+.text {
+
+    font-weight: 600;
+    font-size: 18px;
+    color: #0C0E27;
+}
+
+.index {
+    position: absolute;
+    right: -150px;
+    bottom: 70px;
+    z-index: 20;
+    transform: rotate(10deg);
 }

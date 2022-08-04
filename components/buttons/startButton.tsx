@@ -20,6 +20,7 @@ const StartInput: NextPage = () => {
         }
         else {
             openModal({ name: valProps.val })
+
         }
     }
 
