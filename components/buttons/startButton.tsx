@@ -10,11 +10,18 @@ import { ModalContext } from '../contexts/ModalContext'
 
 const StartInput: NextPage = () => {
     const [modalOpen, setModalOpen] = useState(false)
+    const handleModal = () => {
+        if (valProps.val.length < 2) {
 
+        }
+        else {
+            openModal({ name: valProps.val })
+        }
+    }
 
-    const { modalOpened, openModal } = useContext(ModalContext)
+    const { modalOpened, openModal, valProps } = useContext(ModalContext)
     return (
-        <button className={styles.container} onClick={openModal}>
+        <button className={styles.container} onClick={handleModal}>
 
 
             <div className={styles.text}>Create my page</div>

@@ -7,7 +7,7 @@ import { ModalContext } from '../contexts/ModalContext'
 
 
 const Modal: NextPage = () => {
-    const { modalOpened, closeModal, modalProps, openModal } = useContext(ModalContext)
+    const { modalOpened, closeModal, modalProps } = useContext(ModalContext)
 
     const modalRef: MutableRefObject<any> = useRef()
     const handleClick = (e: { target: any }) => {
@@ -31,7 +31,7 @@ const Modal: NextPage = () => {
         <div className={styles.container} >
             <div className={styles.modal} ref={modalRef}>
 
-                this is my modal
+                user : {modalProps?.name}
             </div>
             <button className={styles.close} onClick={closeModal}>close</button>
 

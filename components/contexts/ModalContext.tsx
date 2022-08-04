@@ -1,20 +1,31 @@
 import React, { createContext, useState } from 'react'
 
-// interface modalPropsInt {
-//     name?: string
-//     email?: string
-// }
+interface modalPropsInt {
+    name?: string
 
-// const baseModalProps = {
-//     name: '',
-//     email: ''
-// }
 
+}
+
+const baseModalProps = {
+    name: '',
+
+}
+
+//get value from startInput
+interface inputPropsInt {
+    val?: string
+}
+const inputModalProps = {
+    val: '',
+
+}
 interface ModalTypes {
-    openModal: () => void
+    openModal: (type: modalPropsInt) => void
     closeModal: () => void
     modalOpened: boolean
-    // modalProps: modalPropsInt
+    modalProps: modalPropsInt
+    valProps: inputPropsInt
+    getVal: (type: inputPropsInt) => void
 
 }
 
@@ -26,18 +37,23 @@ const ModalContext = createContext<ModalTypes>({
         //
     },
     modalOpened: false,
-    // modalProps: baseModalProps,
+    modalProps: baseModalProps,
+    valProps: inputModalProps,
+    getVal: (): void => {
+        //
+    }
 
 })
 
 const ModalProvider = ({ children }: { children: JSX.Element }) => {
     const [modalOpened, setModal] = useState<boolean>(false)
 
-    // const [modalProps, setModalProps] = useState<modalPropsInt>(baseModalProps)
+    const [modalProps, setModalProps] = useState<modalPropsInt>(baseModalProps)
+    const [valProps, setValProps] = useState<inputPropsInt>(inputModalProps)
 
-    const openModal = () => {
+    const openModal = (type: modalPropsInt) => {
         console.log(modalOpened, 'ouvert?')
-        // setModalProps(type)
+        setModalProps(type)
         setModal(true)
     }
 
@@ -45,7 +61,11 @@ const ModalProvider = ({ children }: { children: JSX.Element }) => {
         setModal(false)
         console.log(modalOpened, 'closed')
     }
-
+    //get value from startInput
+    const getVal = (val: inputPropsInt) => {
+        setValProps(val)
+        console.log('gotvalue', valProps)
+    }
 
     return (
         <ModalContext.Provider
@@ -53,8 +73,9 @@ const ModalProvider = ({ children }: { children: JSX.Element }) => {
                 openModal,
                 closeModal,
                 modalOpened,
-                // modalProps,
-
+                modalProps,
+                valProps,
+                getVal
             }}
         >
             {children}
