@@ -8,6 +8,7 @@ import Modal from '../modal/modal'
 import { useContext } from 'react'
 import { ModalContext } from '../contexts/ModalContext'
 import toast from 'react-hot-toast'
+
 const StartInput: NextPage = () => {
     const [modalOpen, setModalOpen] = useState(false)
     const handleModal = () => {
@@ -30,7 +31,7 @@ const StartInput: NextPage = () => {
 
     const { modalOpened, openModal, valProps } = useContext(ModalContext)
     return (
-        <button className={styles.container} onClick={handleModal}>
+        <button className={styles.container} onClick={handleModal} data-splitbee-event={"Button Click"} data-splitbee-event-type={"Start"}>
 
 
             <div className={styles.text}>Create my page</div>

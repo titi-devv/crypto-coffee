@@ -11,8 +11,18 @@ import StartNow from '../components/buttons/startNow'
 import Footer from '../components/footer/footer'
 import Modal from '../components/modal/modal'
 import Reveal from '../components/motion/reveal'
+import { useEffect } from 'react'
 
 const Home: NextPage = () => {
+    function handleState() {
+        window.splitbee.track("Button Click")
+    }
+    useEffect(() => {
+        window.addEventListener('load', handleState)
+        return () => {
+            window.removeEventListener('load', handleState)
+        }
+    })
     return (
         <div className={styles.container}>
             <Head>
