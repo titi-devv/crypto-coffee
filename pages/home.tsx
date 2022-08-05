@@ -10,6 +10,7 @@ import Steps from '../components/steps/steps'
 import StartNow from '../components/buttons/startNow'
 import Footer from '../components/footer/footer'
 import Modal from '../components/modal/modal'
+import Reveal from '../components/motion/reveal'
 
 const Home: NextPage = () => {
     return (
@@ -19,7 +20,7 @@ const Home: NextPage = () => {
 
                 <meta name="description" content="Fund your articles" />
                 <link rel="icon" href="/favicon.ico" />
-
+                <script async src="https://cdn.splitbee.io/sb.js"></script>
             </Head>
 
             <Navbar />
@@ -28,9 +29,13 @@ const Home: NextPage = () => {
                 <div className={styles.section1}>
 
 
-                    <h1 className={styles.main__title}>
-                        1 supporter <br></br>is worth 1000 readers
-                    </h1>
+                    <Reveal from='bottom' delay={.4} duration={.8} >
+
+                        <h1 className={styles.main__title}>
+                            1 supporter <br></br>is worth 1000 readers
+                        </h1>
+                    </Reveal>
+
 
 
                     <p className={styles.main__description}>Accept crypto-coffee donations<br></br>👉 quickly improve your articles, blogs, tutorials, socials, ...</p>
