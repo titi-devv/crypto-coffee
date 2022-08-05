@@ -11,7 +11,11 @@ import toast from 'react-hot-toast'
 const StartInput: NextPage = () => {
     const [modalOpen, setModalOpen] = useState(false)
     const handleModal = () => {
-        if (valProps.val.length < 2) {
+        if (valProps.val.length == 0) {
+            return toast.error("Please enter your name")
+        }
+
+        else if (valProps.val.length < 2) {
             return toast.error("Please enter at least 2 characters")
 
         }

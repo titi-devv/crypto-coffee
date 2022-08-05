@@ -6,6 +6,7 @@ import styles from '../../styles/components/modal.module.css'
 import { ModalContext } from '../contexts/ModalContext'
 import { AiOutlineClose } from 'react-icons/ai'
 import toast from 'react-hot-toast'
+import Reveal from '../motion/reveal'
 
 const Modal: NextPage = () => {
     function capitalizeFirstLetter(string: string | undefined) {
@@ -58,7 +59,7 @@ const Modal: NextPage = () => {
                 <div className={styles.user}>{modalProps.name ? capitalizeFirstLetter(modalProps?.name) : 'Hey'},</div>
                 <div className={styles.description}>Join us before the launch and get an &nbsp;<br></br>
                     <span className={styles.underline}>all time free</span> access.</div>
-                <div className={styles.buttons}>
+                <form className={styles.buttons} data-splitbee-event="Submit Form">
                     <div className={styles.emailInput}>
 
                         <input onChange={(e) => {
@@ -71,11 +72,14 @@ const Modal: NextPage = () => {
                     <button className={styles.buttonInput} onClick={() => verifyEmail(email)}>
                         <div className={styles.text}>Join now</div>
                     </button>
-                    <div className={styles.index}>
+
+
+                </form>
+                <div className={styles.index}>
+                    <Reveal from='right' delay={.4} duration={.8} >
 
                         <Image src="/images/modal_index.svg" alt="main image" width={400.6} height={300.5} draggable="false" />
-                    </div>
-
+                    </Reveal>
                 </div>
 
             </div>

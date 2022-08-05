@@ -7,6 +7,7 @@ import styles from '../../styles/components/startInput.module.css'
 import { ModalContext } from '../contexts/ModalContext';
 
 
+
 const StartInput: NextPage = () => {
   const { getVal } = useContext(ModalContext)
 
@@ -18,6 +19,7 @@ const StartInput: NextPage = () => {
     }
     else if (input.length >= 1) {
       setIsWriting(true)
+
       getVal({ val: input })
 
 
@@ -25,7 +27,7 @@ const StartInput: NextPage = () => {
   }
 
   return (
-    <div className={styles.container}>
+    <form className={styles.container}>
       <span className={styles.domains}>crypto-coffee.me/</span>
       <input onChange={(e) => {
 
@@ -33,7 +35,7 @@ const StartInput: NextPage = () => {
       }} type="text" placeholder='enteryourname' className={styles.placeholder} />
 
 
-    </div>
+    </form>
   )
 }
 

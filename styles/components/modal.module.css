@@ -55,6 +55,7 @@
     border: none;
     background-color: transparent;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .buttons {
