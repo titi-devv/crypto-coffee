@@ -55,7 +55,7 @@ const Modal: NextPage = () => {
             <div className={styles.modal} ref={modalRef}>
                 <div className={styles.comingsoon}>COMING SOON ⌛</div>
                 <button className={styles.close} onClick={closeModal}><AiOutlineClose size={20} color={'#ccc'} /></button>
-                <div className={styles.user}>{capitalizeFirstLetter(modalProps?.name)},</div>
+                <div className={styles.user}>{modalProps.name ? capitalizeFirstLetter(modalProps?.name) : 'Hey'},</div>
                 <div className={styles.description}>Join us before the launch and get an &nbsp;<br></br>
                     <span className={styles.underline}>all time free</span> access.</div>
                 <div className={styles.buttons}>

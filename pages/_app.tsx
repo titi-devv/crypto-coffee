@@ -2,8 +2,10 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { ModalProvider } from '../components/contexts/ModalContext'
 import toast, { Toaster } from 'react-hot-toast'
+import Script from 'next/script'
 function MyApp({ Component, pageProps }: AppProps) {
   return <>
+    <Script async src="https://cdn.splitbee.io/sb.js"></Script>
     <Toaster
       position="top-center"
       reverseOrder={false}

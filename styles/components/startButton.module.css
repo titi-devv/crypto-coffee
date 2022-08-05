@@ -8,6 +8,11 @@
     padding: 1.45em 0;
     border: none;
     cursor: pointer;
+    z-index: 2;
+}
+
+.startNow {
+    padding: 1.15em 0;
 }
 
 .text {
@@ -30,6 +35,10 @@
 @media screen and (min-width:1024px) {
     .container {
         max-width: 280px;
+    }
+
+    .startNow {
+        max-width: 400px;
     }
 
     .text {

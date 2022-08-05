@@ -11,7 +11,6 @@ import StartNow from '../components/buttons/startNow'
 import Footer from '../components/footer/footer'
 import Modal from '../components/modal/modal'
 
-
 const Home: NextPage = () => {
     return (
         <div className={styles.container}>
@@ -20,7 +19,7 @@ const Home: NextPage = () => {
 
                 <meta name="description" content="Fund your articles" />
                 <link rel="icon" href="/favicon.ico" />
-                <script async src="https://cdn.splitbee.io/sb.js"></script>
+
             </Head>
 
             <Navbar />
@@ -28,9 +27,12 @@ const Home: NextPage = () => {
             <main className={styles.main}>
                 <div className={styles.section1}>
 
+
                     <h1 className={styles.main__title}>
                         1 supporter <br></br>is worth 1000 readers
                     </h1>
+
+
                     <p className={styles.main__description}>Accept crypto-coffee donations<br></br>👉 quickly improve your articles, blogs, tutorials, socials, ...</p>
                     <div className={styles.gap}></div>
                     <div className={styles.buttons}>
@@ -124,7 +126,7 @@ const Home: NextPage = () => {
                         Designed for writers
                     </h1>
 
-                    <p className={styles.description} style={{ marginBottom: 30 }}>93,4% of active crypto writers earn <span className={styles.bold}>less</span> than a hundred dollars per month.<br></br><br></br> 96% of crypto articles readers are investors and truly belivers.</p>
+                    <p className={styles.description} style={{ marginBottom: 30 }}>93,4% of active writers earn <span className={styles.bold}>less</span> than a hundred dollars per month.<br></br><br></br> 96% of crypto articles readers are investors and truly belivers.</p>
                     <Image src="/images/btc_wallet.svg" alt="Logo" width={303.71} height={303.71} />
                     <p className={styles.description} >They will have more facility to become your supporters by buying you a crypto-coffee.</p>
 

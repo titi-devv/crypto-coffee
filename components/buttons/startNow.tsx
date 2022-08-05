@@ -6,7 +6,7 @@ import styles from '../../styles/components/startButton.module.css'
 
 const StartNow: NextPage = () => {
     return (
-        <div className={styles.container}>
+        <div className={`${styles.container} ${styles.startNow}`}>
             <div className={styles.text}>Start now <span className={styles.regular}>- It's 100% free</span></div>
         </div>
     )
