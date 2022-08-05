@@ -22,6 +22,7 @@ const Home: NextPage = () => {
           Get started by editing{' '}
           <code className={styles.code}>pages/index.tsx</code>
         </p>
+        <button data-splitbee-event="Test" data-splitbee-event-type="description">test</button>
       </main>
 
       <footer className={styles.footer}>
