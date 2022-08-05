@@ -1,9 +1,19 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import { useEffect } from 'react'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
+  function handleState() {
+    window.splitbee.track("Button Click")
+  }
+  useEffect(() => {
+    window.addEventListener('load', handleState)
+    return () => {
+      window.removeEventListener('load', handleState)
+    }
+  })
   return (
     <div className={styles.container}>
       <Head>
@@ -15,14 +25,14 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to crypto coffee! 2.0
+          Welcome to crypto coffee! 3.0
         </h1>
 
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.tsx</code>
         </p>
-        <button data-splitbee-event="Test" data-splitbee-event-type="description">test</button>
+        <button data-splitbee-event="Button Click" data-splitbee-event-type="Test">test</button>
       </main>
 
       <footer className={styles.footer}>
