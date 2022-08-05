@@ -10,6 +10,7 @@ const Home: NextPage = () => {
         <title>Crypto coffee</title>
         <meta name="description" content="Fund your articles" />
         <link rel="icon" href="/favicon.ico" />
+        <script async src="https://cdn.splitbee.io/sb.js"></script>
       </Head>
 
       <main className={styles.main}>
