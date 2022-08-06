@@ -1,0 +1,26 @@
+.container {
+    width: 100px;
+    background: #6EF283;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0C0E27;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    transition: all ease-in-out 0.1s;
+
+}
+
+.container:hover {
+    transition: all ease-in-out 0.1s;
+    background-color: #6ef284c2;
+}
+
+.text {
+    font-weight: 600;
+    font-size: 14px;
+    color: #0C0E27;
+}

@@ -1,54 +1,18 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
 import Image from 'next/image'
-import { useEffect } from 'react'
-import styles from '../styles/Home.module.css'
+import Home from './home'
 
-const Home: NextPage = () => {
-  function handleState() {
-    window.splitbee.track("Button Click")
-  }
-  useEffect(() => {
-    window.addEventListener('load', handleState)
-    return () => {
-      window.removeEventListener('load', handleState)
-    }
-  })
+
+const Index: NextPage = (href) => {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Crypto coffee</title>
-        <meta name="description" content="Fund your articles" />
-        <link rel="icon" href="/favicon.ico" />
-        <script async src="https://cdn.splitbee.io/sb.js"></script>
-      </Head>
+   <>
+    <Link href={href} passHref>
+      <Home />
+    </Link>
+   </>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to crypto coffee! 3.0
-        </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
-        <button data-splitbee-event="Button Click" data-splitbee-event-type="Test">test</button>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
-    </div>
   )
 }
 
-export default Home
+export default Index

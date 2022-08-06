@@ -1,0 +1,49 @@
+.container {
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0.95em 0;
+
+}
+
+
+
+.domains {
+    text-align: end;
+    width: 100%;
+}
+
+.placeholder {
+    border: 0;
+    background: transparent;
+    color: #CCCCCC;
+    font-size: 16px;
+    text-align: start;
+    width: 80%;
+
+}
+
+.placeholder:focus {
+    border: 0;
+    outline: none;
+}
+
+@media screen and (min-width:767px) and (max-width:1023px) {
+    .container {
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .container {
+        max-width: 520px;
+    }
+
+    .placeholder,
+    .domains {
+        font-size: 20px;
+    }
+}

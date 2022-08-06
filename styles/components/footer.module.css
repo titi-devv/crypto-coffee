@@ -1,0 +1,35 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(204, 204, 204, 0.61);
+    align-items: center;
+    gap: 10px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.copyrights {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+@media screen and (min-width:767px) {
+
+    .container,
+    .copyrights {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

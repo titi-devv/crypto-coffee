@@ -1,0 +1,137 @@
+.container {
+    background-color: rgba(0, 0, 0, 0.505);
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    width: 610px;
+    height: 445px;
+    background: #1A1C37;
+    /* border: 1px solid #fff; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.comingsoon {
+    margin-top: 2em;
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.562);
+}
+
+.user {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.description {
+    font-weight: 700;
+    font-size: 24px;
+
+
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: none;
+    background-color: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.emailInput {
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding: 0.95em 0;
+    z-index: 22;
+
+}
+
+.placeholder {
+    border: 0;
+    background: transparent;
+    color: #CCCCCC;
+    font-size: 16px;
+    width: 90%;
+    text-align: center;
+
+}
+
+.placeholder:focus {
+    border: 0;
+    outline: none;
+}
+
+.buttonInput {
+    background: #6EF283;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 55px;
+    border: none;
+    cursor: pointer;
+    transition: all ease-in-out 0.1s;
+    position: relative;
+}
+
+.buttonInput:hover {
+    background-color: #6ef284c2;
+    transition: all ease-in-out 0.1s;
+}
+
+.text {
+
+    font-weight: 600;
+    font-size: 18px;
+    color: #0C0E27;
+}
+
+.index {
+    position: absolute;
+    right: -150px;
+    bottom: 70px;
+    z-index: 20;
+    transform: rotate(10deg);
+}
+
+.buttonLoader {
+    height: 55px;
+}
+
+.loader {
+    position: absolute;
+}

@@ -1,0 +1,49 @@
+.container {
+    background: #6EF283;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1.45em 0;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    transition: all ease-in-out 0.1s;
+}
+
+.container:hover {
+    background-color: #6ef284c2;
+    transition: all ease-in-out 0.1s;
+}
+
+.text {
+
+    font-weight: 600;
+    font-size: 18px;
+    color: #0C0E27;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+@media screen and (min-width:767px) and (max-width:1023px) {
+    .container {
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .container {
+        max-width: 280px;
+    }
+
+    .startNow {
+        max-width: 400px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+}
