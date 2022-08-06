@@ -9,9 +9,13 @@
     border: none;
     cursor: pointer;
     z-index: 2;
+    transition: all ease-in-out 0.1s;
 }
 
-
+.container:hover {
+    background-color: #6ef284c2;
+    transition: all ease-in-out 0.1s;
+}
 
 .text {
 
