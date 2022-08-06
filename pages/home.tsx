@@ -12,10 +12,12 @@ import Footer from '../components/footer/footer'
 import Modal from '../components/modal/modal'
 import Reveal from '../components/motion/reveal'
 import { useEffect } from 'react'
+import splitbee from '@splitbee/web';
 
 const Home: NextPage = () => {
     function handleState() {
-        window.splitbee.track("Button Click")
+        splitbee.track("Button Click")
+        splitbee.track("Submit Email")
     }
     useEffect(() => {
         window.addEventListener('load', handleState)
@@ -30,7 +32,6 @@ const Home: NextPage = () => {
 
                 <meta name="description" content="Fund your articles" />
                 <link rel="icon" href="/favicon.ico" />
-                <script async src="https://cdn.splitbee.io/sb.js"></script>
             </Head>
 
             <Navbar />

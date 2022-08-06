@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@splitbee/web": "^0.3.0",
     "aws-amplify": "^4.3.29",
     "framer-motion": "^7.0.0",
     "next": "^12.2.3",

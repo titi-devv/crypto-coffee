@@ -7,8 +7,15 @@ import { ModalContext } from '../contexts/ModalContext'
 import { AiOutlineClose } from 'react-icons/ai'
 import toast from 'react-hot-toast'
 import Reveal from '../motion/reveal'
+import splitbee from '@splitbee/web';
 
-const Modal: NextPage = () => {
+interface myProps {
+    data_splitbee_event?: string
+}
+const Modal: NextPage<myProps> = (props) => {
+
+
+    const { data_splitbee_event } = props
     function capitalizeFirstLetter(string: string | undefined) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
@@ -36,6 +43,14 @@ const Modal: NextPage = () => {
     function isValidEmail(email: string) {
         return /\S+@\S+\.\S+/.test(email);
     }
+    const [verifiedEmail, setVerifiedEmail] = useState(false)
+    function handleState(email: string, username: string) {
+
+        splitbee.user.set({
+            username: `${username}`,
+            email: `${email}`
+        })
+    }
     const verifyEmail = (input: string) => {
         if (!isValidEmail(input)) {
 
@@ -43,6 +58,7 @@ const Modal: NextPage = () => {
         }
         else {
 
+            handleState(input, capitalizeFirstLetter(modalProps.name))
             toast.success("Congratulation, you are in and your domain is saved !🎉")
             // TODO : add spinner
             closeModal()
@@ -50,7 +66,15 @@ const Modal: NextPage = () => {
 
 
     }
-
+    function handleState2() {
+        splitbee.track("Verify Email Click")
+    }
+    useEffect(() => {
+        window.addEventListener('load', handleState2)
+        return () => {
+            window.removeEventListener('load', handleState2)
+        }
+    })
     return modalOpened ? (
         <div className={styles.container} >
             <div className={styles.modal} ref={modalRef}>
@@ -59,7 +83,7 @@ const Modal: NextPage = () => {
                 <div className={styles.user}>{modalProps.name ? capitalizeFirstLetter(modalProps?.name) : 'Hey'},</div>
                 <div className={styles.description}>Join us before the launch and get an &nbsp;<br></br>
                     <span className={styles.underline}>all time free</span> access.</div>
-                <form className={styles.buttons} data-splitbee-event="Submit Form">
+                <form className={styles.buttons}>
                     <div className={styles.emailInput}>
 
                         <input onChange={(e) => {
@@ -69,7 +93,7 @@ const Modal: NextPage = () => {
 
 
                     </div>
-                    <button className={styles.buttonInput} onClick={() => verifyEmail(email)}>
+                    <button className={styles.buttonInput} onClick={() => verifyEmail(email)} data-splitbee-event="Verify Email Click">
                         <div className={styles.text}>Join now</div>
                     </button>
 

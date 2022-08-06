@@ -9,6 +9,7 @@ import { ModalContext } from '../contexts/ModalContext';
 
 
 const StartInput: NextPage = () => {
+
   const { getVal } = useContext(ModalContext)
 
   const [isWriting, setIsWriting] = useState(false)
