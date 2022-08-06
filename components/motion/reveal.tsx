@@ -22,7 +22,7 @@ export default function Reveal(props: any) {
                         case 'right':
                             return 100
                         case 'left':
-                            return -50
+                            return -100
                         default:
                             return 0
                     }

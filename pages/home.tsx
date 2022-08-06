@@ -81,21 +81,29 @@ const Home: NextPage = () => {
 
                     <div className={styles.gap}></div>
                     <div className={styles.images}>
+
+
                         <div className={styles.bell}>
                             <Image src="/images/emojis/bell.svg" alt="notification" layout='fill' draggable={"false"} />
                         </div>
 
-                        <Image src="/images/send_cryptocoffee.svg" alt="send crypto coffee" width={314} height={361.56} draggable={"false"} />
-                        <div className={styles.right}>
-                            <span className={styles.image}>
+                        <Reveal from='left' delay={.4} duration={.8} >
 
-                                <Image src="/images/received_cryptocoffee.svg" alt="received crypto coffee" width={314} height={91.63} draggable={"false"} />
-                            </span>
-                            <span className={styles.image}>
+                            <Image src="/images/send_cryptocoffee.svg" alt="send crypto coffee" width={314} height={361.56} draggable={"false"} />
+                        </Reveal>
+                        <Reveal from='right' delay={.1} duration={.8} >
 
-                                <Image src="/images/received_cryptocoffee_desc.svg" alt="received crypto coffee with description" width={314} height={198.32} draggable={"false"} />
-                            </span>
-                        </div>
+                            <div className={styles.right}>
+                                <span className={styles.image}>
+
+                                    <Image src="/images/received_cryptocoffee.svg" alt="received crypto coffee" width={314} height={91.63} draggable={"false"} />
+                                </span>
+                                <span className={styles.image}>
+
+                                    <Image src="/images/received_cryptocoffee_desc.svg" alt="received crypto coffee with description" width={314} height={198.32} draggable={"false"} />
+                                </span>
+                            </div>
+                        </Reveal>
                     </div>
                     <p className={styles.description}>No account required everything is made from their crypto wallet, in a decentralized way.</p>
 
@@ -107,34 +115,36 @@ const Home: NextPage = () => {
                     <div className={styles.gap}></div>
 
 
-                    <div className={styles.bottom}>
-                        <Steps
-                            image={'gear'}
-                            title={'Set your page up.'}
-                            desc1={'Name, Description, Socials, '}
-                            desc2={'Profile & Background p.icture'}
-                            desc3={'‎ '}
-                            step={'01'}
-                        />
-                        <Links />
-                        <Steps
-                            image={'clap'}
-                            title={'Choose your cryptos.'}
-                            desc1={'Ethereum, Bitcoin, Avalanche, '}
-                            desc2={'Near, Fuze, Aurora'}
-                            desc3={'‎ '}
-                            step={'02'}
-                        />
-                        <Links />
-                        <Steps
-                            image={'rocket'}
-                            title={'Share your page !'}
-                            desc1={'Share it at the end of your'}
-                            desc2={'articles, in your bio, on twitter'}
-                            desc3={'everywhere !'}
-                            step={'03'}
-                        />
-                    </div>
+                    <Reveal from='bottom' delay={.1} duration={.8} >
+                        <div className={styles.bottom}>
+                            <Steps
+                                image={'gear'}
+                                title={'Set your page up.'}
+                                desc1={'Name, Description, Socials, '}
+                                desc2={'Profile & Background p.icture'}
+                                desc3={'‎ '}
+                                step={'01'}
+                            />
+                            <Links />
+                            <Steps
+                                image={'clap'}
+                                title={'Choose your cryptos.'}
+                                desc1={'Ethereum, Bitcoin, Avalanche, '}
+                                desc2={'Near, Fuze, Aurora'}
+                                desc3={'‎ '}
+                                step={'02'}
+                            />
+                            <Links />
+                            <Steps
+                                image={'rocket'}
+                                title={'Share your page !'}
+                                desc1={'Share it at the end of your'}
+                                desc2={'articles, in your bio, on twitter'}
+                                desc3={'everywhere !'}
+                                step={'03'}
+                            />
+                        </div>
+                    </Reveal>
 
                 </div>
                 <div className={styles.section4}>
@@ -143,7 +153,10 @@ const Home: NextPage = () => {
                     </h1>
 
                     <p className={styles.description} style={{ marginBottom: 30 }}>93,4% of active writers earn <span className={styles.bold}>less</span> than a hundred dollars per month.<br></br><br></br> 96% of crypto articles readers are investors and truly belivers.</p>
-                    <Image src="/images/btc_wallet.svg" alt="Logo" width={303.71} height={303.71} />
+                    <Reveal from='right' delay={.1} duration={.8} >
+
+                        <Image src="/images/btc_wallet.svg" alt="Logo" width={303.71} height={303.71} />
+                    </Reveal>
                     <p className={styles.description} >They will have more facility to become your supporters by buying you a crypto-coffee.</p>
 
 
