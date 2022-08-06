@@ -101,10 +101,11 @@
     justify-content: center;
     align-items: center;
     width: 70%;
-    padding: 1.45em 0;
+    height: 55px;
     border: none;
     cursor: pointer;
     transition: all ease-in-out 0.1s;
+    position: relative;
 }
 
 .buttonInput:hover {
@@ -125,4 +126,12 @@
     bottom: 70px;
     z-index: 20;
     transform: rotate(10deg);
+}
+
+.buttonLoader {
+    height: 55px;
+}
+
+.loader {
+    position: absolute;
 }

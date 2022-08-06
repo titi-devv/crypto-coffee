@@ -5,18 +5,16 @@ import { useContext, MutableRefObject, useRef, useEffect, useState } from 'react
 import styles from '../../styles/components/modal.module.css'
 import { ModalContext } from '../contexts/ModalContext'
 import { AiOutlineClose } from 'react-icons/ai'
-import toast from 'react-hot-toast'
+import toast, { LoaderIcon } from 'react-hot-toast'
 import Reveal from '../motion/reveal'
 import splitbee from '@splitbee/web';
+import ClipLoader from "react-spinners/ClipLoader";
 
-interface myProps {
-    data_splitbee_event?: string
-}
 const Modal: NextPage<myProps> = (props) => {
 
 
-    const { data_splitbee_event } = props
-    function capitalizeFirstLetter(string: string | undefined) {
+
+    function capitalizeFirstLetter(string: string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
 
@@ -51,17 +49,28 @@ const Modal: NextPage<myProps> = (props) => {
             email: `${email}`
         })
     }
+
     const verifyEmail = (input: string) => {
         if (!isValidEmail(input)) {
 
             return toast.error("Your email is invalid 😥")
         }
         else {
+            setVerifiedEmail(true)
+            setTimeout(function () {
+                handleState(input, modalProps.name ? capitalizeFirstLetter(modalProps.name) : "No username")
+                if (modalProps.name) {
+                    toast.success("Congratulation, you are in and your domain is saved !🎉")
 
-            handleState(input, capitalizeFirstLetter(modalProps.name))
-            toast.success("Congratulation, you are in and your domain is saved !🎉")
-            // TODO : add spinner
-            closeModal()
+                } else {
+                    toast.success("Congratulation, you are in !🎉")
+                }
+                // TODO : add spinner
+                closeModal()
+                setVerifiedEmail(false)
+                setEmail('')
+            }, 1500);
+
         }
 
 
@@ -93,9 +102,19 @@ const Modal: NextPage<myProps> = (props) => {
 
 
                     </div>
-                    <button className={styles.buttonInput} onClick={() => verifyEmail(email)} data-splitbee-event="Verify Email Click">
-                        <div className={styles.text}>Join now</div>
-                    </button>
+                    {verifiedEmail === true ?
+                        <>
+                            <div className={`${styles.buttonInput} ${styles.buttonLoader}`}>
+                                <div className={styles.loader}><ClipLoader color="#1A1C37" /></div>
+                            </div>
+                        </>
+                        :
+                        <>
+                            <div className={styles.buttonInput} onClick={() => verifyEmail(email)} data-splitbee-event="Verify Email Click">
+                                <div className={styles.text}>Join now</div>
+                            </div>
+
+                        </>}
 
 
                 </form>
