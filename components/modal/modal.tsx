@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
-import Link from 'next/link'
+
 import { useContext, MutableRefObject, useRef, useEffect, useState } from 'react'
 import styles from '../../styles/components/modal.module.css'
 import { ModalContext } from '../contexts/ModalContext'
@@ -10,7 +10,7 @@ import Reveal from '../motion/reveal'
 import splitbee from '@splitbee/web';
 import ClipLoader from "react-spinners/ClipLoader";
 
-const Modal: NextPage<myProps> = (props) => {
+const Modal: NextPage = () => {
 
 
 
