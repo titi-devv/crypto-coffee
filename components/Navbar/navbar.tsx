@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
-import Link from 'next/link'
-import styles from '../../styles/components/navbar.module.css'
+import styles from '../../styles/components/Navbar.module.css'
 import { BsTwitter } from 'react-icons/bs'
 import Signup from '../buttons/signup'
 
