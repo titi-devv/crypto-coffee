@@ -62,11 +62,14 @@ const Home: NextPage = () => {
                         <p className={styles.small__text}>Only on</p>
                         <Image src="/images/logos/medium__logo.png" alt="Logo" width={200} height={50} style={{ opacity: 0.5 }} />
                     </div>
+
+
                     <div className={styles.hero__hand}>
 
                         <Image src="/images/hero__hand.svg" alt="main image" layout='fill' draggable="false" />
 
                     </div>
+
                 </div>
 
 
@@ -153,7 +156,7 @@ const Home: NextPage = () => {
                     </h1>
 
                     <p className={styles.description} style={{ marginBottom: 30 }}>93,4% of active writers earn <span className={styles.bold}>less</span> than a hundred dollars per month.<br></br><br></br> 96% of crypto articles readers are investors and truly belivers.</p>
-                    <Reveal from='right' delay={.1} duration={.8} >
+                    <Reveal from='right' delay={.2} duration={.8} >
 
                         <Image src="/images/btc_wallet.svg" alt="Logo" width={303.71} height={303.71} />
                     </Reveal>

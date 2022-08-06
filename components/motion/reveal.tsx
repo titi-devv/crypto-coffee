@@ -20,9 +20,9 @@ export default function Reveal(props: any) {
                 x: (() => {
                     switch (props.from) {
                         case 'right':
-                            return 100
+                            return 200
                         case 'left':
-                            return -100
+                            return -50
                         default:
                             return 0
                     }
