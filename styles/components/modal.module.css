@@ -14,7 +14,7 @@
 
 .modal {
 
-    height: 445px;
+    padding-bottom: 2em;
     width: 95%;
     background: #1A1C37;
     /* border: 1px solid #fff; */
@@ -24,6 +24,8 @@
     gap: 25px;
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 .comingsoon {
@@ -41,7 +43,7 @@
 .description {
     font-weight: 700;
     font-size: 24px;
-
+    max-width: 80%;
 
 }
 
@@ -126,14 +128,14 @@
 
     position: absolute;
     right: -150px;
-    bottom: 70px;
+    bottom: 50px;
     z-index: 20;
     transform: rotate(10deg);
 }
 
 @media screen and (min-width:630px) {
     .modal {
-        width: 610px;
+        width: 550px;
 
     }
 

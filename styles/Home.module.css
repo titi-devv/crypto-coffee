@@ -141,6 +141,7 @@
     position: absolute;
     bottom: 1em;
     left: 7.5rem;
+    align-items: flex-start;
 
   }
 

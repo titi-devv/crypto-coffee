@@ -43,7 +43,7 @@ const Modal: NextPage = () => {
     }
     const [verifiedEmail, setVerifiedEmail] = useState(false)
     function handleState(email: string, username: string) {
-
+        splitbee.track("Submit Email")
         splitbee.user.set({
             username: `${username}`,
             email: `${email}`
@@ -60,7 +60,8 @@ const Modal: NextPage = () => {
             setTimeout(function () {
                 handleState(input, modalProps.name ? capitalizeFirstLetter(modalProps.name) : "No username")
                 if (modalProps.name) {
-                    toast.success("Congratulation, you are in and your domain is saved !🎉")
+                    toast.success(`Congratulation, you are in. 
+                    www.crypto-coffee.me/${modalProps.name} is privatized for you !🎉`)
 
                 } else {
                     toast.success("Congratulation, you are in !🎉")
