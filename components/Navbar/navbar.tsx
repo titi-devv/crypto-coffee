@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '../../styles/components/Navbar.module.css'
 import { BsTwitter } from 'react-icons/bs'
 import Signup from '../buttons/signup'
-
+//
 const Navbar: NextPage = () => {
     return (
         <div className={styles.container}>
