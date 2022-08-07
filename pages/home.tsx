@@ -32,6 +32,7 @@ const Home: NextPage = () => {
 
                 <meta name="description" content="Fund your articles" />
                 <link rel="icon" href="/favicon.ico" />
+                <script async src="https://cdn.splitbee.io/sb.js"></script>
             </Head>
 
             <Navbar />
@@ -155,7 +156,7 @@ const Home: NextPage = () => {
                         Designed for writers
                     </h1>
 
-                    <p className={styles.description} style={{ marginBottom: 30 }}>93,4% of active writers earn <span className={styles.bold}>less</span> than a hundred dollars per month.<br></br><br></br> 96% of crypto articles readers are investors and truly belivers.</p>
+                    <p className={styles.description} style={{ marginBottom: 30 }}>94.6% of active writers earn <span className={styles.bold}>less</span> than a hundred dollars per month.<br></br><br></br> 96% of crypto articles readers are investors and truly belivers.</p>
                     <Reveal from='right' delay={.2} duration={.8} >
 
                         <Image src="/images/btc_wallet.svg" alt="Logo" width={303.71} height={303.71} />
