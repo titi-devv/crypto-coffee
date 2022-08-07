@@ -30,11 +30,34 @@ const Home: NextPage = () => {
     return (
         <div className={styles.container}>
             <Head>
-                <title>Crypto coffee</title>
 
-                <meta name="description" content="Fund your articles" />
+
+                <title>Buy Me a Crypto Coffee</title>
+
                 <link rel="icon" href="/favicon.ico" />
                 <script async src="https://cdn.splitbee.io/sb.js"></script>
+
+
+
+                <meta name="description" content="Accept Crypto Coffees 👉 Earn more money" />
+
+
+                <meta property="og:url" content="https://www.crypto-coffee.me/" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Buy Me a Crypto Coffee" />
+                <meta property="og:description" content="Accept Crypto Coffees 👉 Earn more money" />
+                <meta property="og:image" content="<%= require('./images/presentation.png') %>" />
+
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta property="twitter:domain" content="crypto-coffee.me" />
+                <meta property="twitter:url" content="https://www.crypto-coffee.me/" />
+                <meta name="twitter:title" content="Buy Me a Crypto Coffee" />
+                <meta name="twitter:description" content="Accept Crypto Coffees 👉 Earn more money" />
+                <meta name="twitter:image" content="<%= require('./images/presentation.png') %>" />
+
+
+
             </Head>
 
             <Navbar />
@@ -52,7 +75,7 @@ const Home: NextPage = () => {
 
 
 
-                    <p className={styles.main__description}>Accept crypto-coffee donations<br></br>👉 quickly improve your articles, blogs, tutorials, socials, ...</p>
+                    <p className={styles.main__description}>Accept crypto-coffee donations<br></br>👉 quickly improve your articles, stories, blogs, tutorials, ...</p>
                     <div className={styles.gap}></div>
                     <div className={styles.buttons}>
 
