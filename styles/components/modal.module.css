@@ -13,8 +13,9 @@
 }
 
 .modal {
-    width: 610px;
+
     height: 445px;
+    width: 95%;
     background: #1A1C37;
     /* border: 1px solid #fff; */
     border-radius: 10px;
@@ -121,11 +122,24 @@
 }
 
 .index {
+    display: none;
+
     position: absolute;
     right: -150px;
     bottom: 70px;
     z-index: 20;
     transform: rotate(10deg);
+}
+
+@media screen and (min-width:630px) {
+    .modal {
+        width: 610px;
+
+    }
+
+    .index {
+        display: flex;
+    }
 }
 
 .buttonLoader {
