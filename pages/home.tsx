@@ -178,7 +178,7 @@ const Home: NextPage = () => {
                 </div>
                 <div className={styles.section4}>
                     <h1 className={styles.title}>
-                        Designed for writers
+                        Designed for crypto writers
                     </h1>
 
                     <p className={styles.description} style={{ marginBottom: 30 }}>94.6% of active writers earn <span className={styles.bold}>less</span> than a hundred dollars per month.<br></br><br></br> 96% of crypto articles readers are investors and truly belivers.</p>
