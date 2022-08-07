@@ -9,7 +9,7 @@ import { ModalContext } from '../contexts/ModalContext'
 const Signup: NextPage = () => {
     const { openModal } = useContext(ModalContext)
     return (
-        <button className={styles.container} onClick={() => openModal({})}>
+        <button className={styles.container} onClick={() => openModal({})} data-splitbee-event="Join Now Click">
             <p className={styles.text}>Join now</p>
         </button>
     )

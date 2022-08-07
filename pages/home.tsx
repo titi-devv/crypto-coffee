@@ -16,8 +16,10 @@ import splitbee from '@splitbee/web';
 
 const Home: NextPage = () => {
     function handleState() {
-        splitbee.track("Button Click")
+        splitbee.track("Create Button Click")
+        splitbee.track("Join Now Click")
         splitbee.track("Submit Email")
+        splitbee.track("Name")
     }
     useEffect(() => {
         window.addEventListener('load', handleState)

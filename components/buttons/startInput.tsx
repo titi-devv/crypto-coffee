@@ -33,7 +33,7 @@ const StartInput: NextPage = () => {
       <input onChange={(e) => {
 
         toggleWriting(e.target.value)
-      }} type="text" placeholder='enteryourname' className={styles.placeholder} />
+      }} type="text" placeholder='enteryourname' className={styles.placeholder} data-splitbee-event="Name" />
 
 
     </form>

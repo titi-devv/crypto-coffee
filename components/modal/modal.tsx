@@ -98,7 +98,7 @@ const Modal: NextPage = () => {
                         <input onChange={(e) => {
 
                             setEmail(e.target.value)
-                        }} type="text" placeholder='exemple@gmail.com' className={styles.placeholder} />
+                        }} type="text" placeholder='exemple@gmail.com' className={styles.placeholder} data-splitbee-event="Submit Email" />
 
 
                     </div>

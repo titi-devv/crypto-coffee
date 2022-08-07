@@ -29,7 +29,7 @@ const StartInput: NextPage = () => {
 
     const { modalOpened, openModal, valProps } = useContext(ModalContext)
     return (
-        <button className={styles.container} onClick={handleModal}>
+        <button className={styles.container} onClick={handleModal} data-splitbee-event="Create Button Click">
 
 
             <div className={styles.text}>Create my page</div>
