@@ -119,12 +119,12 @@ const Modal: NextPage = () => {
 
 
                 </form>
-                <div className={styles.index}>
+                {/* <div className={styles.index}>
                     <Reveal from='right' delay={.4} duration={.8} >
 
                         <Image src="/images/modal_index.svg" alt="main image" width={400.6} height={300.5} draggable="false" />
                     </Reveal>
-                </div>
+                </div> */}
 
             </div>
 
