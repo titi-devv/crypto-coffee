@@ -11,3 +11,16 @@
     gap: 20px;
     align-items: center;
 }
+
+.twitter {
+    cursor: pointer;
+    transition: all ease-in-out 0.1s;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+.twitter:hover {
+    opacity: 0.7;
+    transition: all ease-in-out 0.1s;
+}

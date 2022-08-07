@@ -7,9 +7,12 @@ import Signup from '../buttons/signup'
 const Navbar: NextPage = () => {
     return (
         <div className={styles.container}>
+
             <Image src="/images/logos/logo.png" alt="Logo" width={40} height={35} />
             <div className={styles.buttons}>
-                <BsTwitter size={25} />
+                <a href="https://twitter.com/thibuilder" data-splitbee-event="External Link" data-splitbee-event-destination="twitter" target="_blank" rel="noreferrer" className={styles.twitter}>
+                    <BsTwitter size={25} />
+                </a>
                 <Signup />
             </div>
         </div>

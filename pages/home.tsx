@@ -15,18 +15,18 @@ import { useEffect } from 'react'
 import splitbee from '@splitbee/web';
 
 const Home: NextPage = () => {
-    function handleState() {
-        splitbee.track("Create Button Click")
-        splitbee.track("Join Now Click")
-        splitbee.track("Submit Email")
-        splitbee.track("Name")
-    }
-    useEffect(() => {
-        window.addEventListener('load', handleState)
-        return () => {
-            window.removeEventListener('load', handleState)
-        }
-    })
+    // function handleState() {
+    //     splitbee.track("Create Button Click")
+    //     splitbee.track("Join Now Click")
+    //     splitbee.track("Submit Email")
+    //     splitbee.track("Name")
+    // }
+    // useEffect(() => {
+    //     window.addEventListener('load', handleState)
+    //     return () => {
+    //         window.removeEventListener('load', handleState)
+    //     }
+    // })
     return (
         <div className={styles.container}>
             <Head>
