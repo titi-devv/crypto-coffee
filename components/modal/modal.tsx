@@ -91,7 +91,7 @@ const Modal: NextPage = () => {
                 <div className={styles.comingsoon}>COMING SOON ⌛</div>
                 <button className={styles.close} onClick={closeModal}><AiOutlineClose size={20} color={'#ccc'} /></button>
                 <div className={styles.user}>{modalProps.name ? capitalizeFirstLetter(modalProps?.name) : 'Hey'},</div>
-                <div className={styles.description}>Join us before the launch and get an &nbsp;<br></br>
+                <div className={styles.description}>Join us before the launch and get an &nbsp;
                     <span className={styles.underline}>all time free</span> access.</div>
                 <form className={styles.buttons}>
                     <div className={styles.emailInput}>
@@ -119,12 +119,12 @@ const Modal: NextPage = () => {
 
 
                 </form>
-                {/* <div className={styles.index}>
+                <div className={styles.index}>
                     <Reveal from='right' delay={.4} duration={.8} >
 
-                        <Image src="/images/modal_index.svg" alt="main image" width={400.6} height={300.5} draggable="false" />
+                        <Image src="/images/modal_index.svg" alt="main image" width={200.6} height={200.5} draggable="false" />
                     </Reveal>
-                </div> */}
+                </div>
 
             </div>
 
