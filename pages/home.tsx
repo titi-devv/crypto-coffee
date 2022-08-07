@@ -39,13 +39,13 @@ const Home: NextPage = () => {
 
 
 
-                <meta name="description" content="Accept Crypto Coffees => receive extra revenues" />
+                <meta name="description" content="Accept Crypto Coffees => receive extra revenue" />
 
 
                 <meta property="og:url" content="https://www.crypto-coffee.me/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Buy Me a Crypto Coffee" />
-                <meta property="og:description" content="Accept Crypto Coffees => receive extra revenues" />
+                <meta property="og:description" content="Accept Crypto Coffees => receive extra revenue" />
                 <meta property="og:image" content="./images/presentation.png" />
 
 
@@ -53,7 +53,7 @@ const Home: NextPage = () => {
                 <meta property="twitter:domain" content="crypto-coffee.me" />
                 <meta property="twitter:url" content="https://www.crypto-coffee.me/" />
                 <meta name="twitter:title" content="Buy Me a Crypto Coffee" />
-                <meta name="twitter:description" content="Accept Crypto Coffees => receive extra revenues" />
+                <meta name="twitter:description" content="Accept Crypto Coffees => receive extra revenue" />
                 <meta name="twitter:image" content="./images/presentation.png" />
 
 
