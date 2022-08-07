@@ -39,22 +39,22 @@ const Home: NextPage = () => {
 
 
 
-                <meta name="description" content="Accept Crypto Coffees => receive more than 0.01 $ from medium" />
+                <meta name="description" content="Accept Crypto Coffees => receive extra revenues" />
 
 
                 <meta property="og:url" content="https://www.crypto-coffee.me/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Buy Me a Crypto Coffee" />
-                <meta property="og:description" content="Accept Crypto Coffees => receive more than 0.01 $ from medium" />
-                <meta property="og:image" content="<%= require('./images/presentation.png') %>" />
+                <meta property="og:description" content="Accept Crypto Coffees => receive extra revenues" />
+                <meta property="og:image" content="./images/presentation.png" />
 
 
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta property="twitter:domain" content="crypto-coffee.me" />
                 <meta property="twitter:url" content="https://www.crypto-coffee.me/" />
                 <meta name="twitter:title" content="Buy Me a Crypto Coffee" />
-                <meta name="twitter:description" content="Accept Crypto Coffees => receive more than 0.01 $ from medium" />
-                <meta name="twitter:image" content="<%= require('./images/presentation.png') %>" />
+                <meta name="twitter:description" content="Accept Crypto Coffees => receive extra revenues" />
+                <meta name="twitter:image" content="./images/presentation.png" />
 
 
 
