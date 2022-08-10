@@ -75,7 +75,7 @@ const Home: NextPage = () => {
 
 
 
-                    <p className={styles.main__description}>Accept crypto-coffee donations<br></br>👉 quickly improve your articles, stories, blogs, tutorials, ...</p>
+                    <p className={styles.main__description}>Accept crypto-coffee donations<br></br>👉 earn extra revenue & improve your articles.</p>
                     <div className={styles.gap}></div>
                     <div className={styles.buttons}>
 
