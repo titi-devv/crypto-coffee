@@ -6,9 +6,9 @@ import Home from './home'
 
 const Logo: NextPage = (href) => {
     return (
-        <>
-            <Image src="/images/logos/logo.png" alt="Logo" width={40} height={35} />
-        </>
+        <div>
+            <Image src="/images/presentation.png" alt="Logo" width={600} height={350} />
+        </div>
 
 
     )
