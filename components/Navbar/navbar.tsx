@@ -10,9 +10,9 @@ const Navbar: NextPage = () => {
 
             <Image src="/images/logos/logo.png" alt="Logo" width={40} height={35} />
             <div className={styles.buttons}>
-                <a href="https://twitter.com/thibuilder" data-splitbee-event="External Link" data-splitbee-event-destination="twitter" target="_blank" rel="noreferrer" className={styles.twitter}>
+                {/* <a href="https://twitter.com/thibuilder" data-splitbee-event="External Link" data-splitbee-event-destination="twitter" target="_blank" rel="noreferrer" className={styles.twitter}>
                     <BsTwitter size={25} />
-                </a>
+                </a> */}
                 <Signup />
             </div>
         </div>
