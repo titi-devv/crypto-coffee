@@ -46,7 +46,7 @@ const Home: NextPage = () => {
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Buy Me a Crypto Coffee" />
                 <meta property="og:description" content="Accept Crypto Coffees => receive extra revenue" />
-                <meta property="og:image" content="./images/presentation.png" />
+                <meta property="og:image" content="https://www.crypto-coffee.me/_next/image?url=%2Fimages%2Flogos%2Flogo.png&w=96&q=75" />
 
 
                 <meta name="twitter:card" content="summary_large_image" />
@@ -54,7 +54,7 @@ const Home: NextPage = () => {
                 <meta property="twitter:url" content="https://www.crypto-coffee.me/" />
                 <meta name="twitter:title" content="Buy Me a Crypto Coffee" />
                 <meta name="twitter:description" content="Accept Crypto Coffees => receive extra revenue" />
-                <meta name="twitter:image" content="./images/presentation.png" />
+                <meta name="twitter:image" content="https://www.crypto-coffee.me/_next/image?url=%2Fimages%2Flogos%2Flogo.png&w=96&q=75" />
 
 
 
