@@ -15,7 +15,7 @@ const Footer: NextPage = () => {
             </div>
             <div className={styles.author}>
 
-                Built with ☕ buy&nbsp;
+                Built with ☕ by&nbsp;
                 <a
                     href="https://twitter.com/thibuilder"
                     target="_blank"
